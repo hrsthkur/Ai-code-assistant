@@ -20,7 +20,7 @@ const [output, setOutput] = useState({});
     setLoading(true)
     setOutput("Runnig your code")
     try{
-     const res = await fetch("http://localhost:5000/analyze",{
+     const res = await fetch("https://ai-code-assistant-bnli.onrender.com/analyze",{
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({code,language})
@@ -64,7 +64,7 @@ const onSend =async (input)=>{
 
     //dummy response
 
-     const res = await fetch("http://localhost:5000/send",{
+     const res = await fetch("https://ai-code-assistant-bnli.onrender.com/send",{
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({code,language,input})
