@@ -19,7 +19,8 @@ function ChatInput({ loading, onSend }) {
   return (
     <div className="mt-2 flex  items-center gap-2 border border-gray-700 bg-[#1e1e1e] rounded-xl p-2">
       <textarea
-        className="focus:outline-none focus:ring-0 w-full  h-[11vh] rounded-xl p-2 border-none flex-1 resize-none text-white bg-[#2b2b2b]"
+        className="focus:outline-none focus:ring-0 w-full  h-[11vh] roun
+        ded-xl p-2 border-none flex-1 resize-none text-white bg-[#2b2b2b]"
         placeholder="Ask your doubts here..."
         onChange={(e) => setInput(e.target.value)}
         value={input}
